@@ -1,0 +1,85 @@
+/* General navbar styles */
+.custom-navbar {
+  padding: 0.6rem 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.95rem;
+}
+
+/* Logo */
+.navbar-brand .logo {
+  height: 38px;
+}
+
+/* Nav links */
+.navbar .nav-link {
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #dc3545;
+  border-bottom: 2px solid #dc3545;
+}
+
+/* Search input */
+.search-input {
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  width: 240px;
+  transition: width 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Button */
+.navbar button[type="submit"] {
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Badge for cart */
+.badge {
+  font-size: 0.7rem;
+  padding: 4px 7px;
+}
+
+/* Responsive design */
+@media (max-width: 991.98px) {
+  .navbar-right {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-input {
+    width: 180px;
+  }
+
+  .navbar .nav-link {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .navbar-right {
+    gap: 1rem;
+  }
+}

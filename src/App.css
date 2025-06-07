@@ -1,0 +1,17 @@
+/* app.css */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: #212529;
+  opacity: 1 !important; /* đảm bảo không bị mờ sau GSAP */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}

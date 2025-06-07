@@ -1,0 +1,66 @@
+footer.footer {
+  background-color: #111;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  flex-shrink: 0; /* quan trọng để footer không bị co lại khi dùng flex layout */
+}
+
+footer.footer h4,
+footer.footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer.footer a {
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+footer.footer a:hover {
+  color: #f8c146;
+  text-decoration: underline;
+}
+
+footer.footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer.footer form input[type="email"] {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+footer.footer form input[type="email"]::placeholder {
+  color: #bbb;
+}
+
+footer.footer form input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem #f8c146;
+  border-color: #f8c146;
+}
+
+footer.footer form button {
+  border-color: #f8c146;
+  color: #f8c146;
+  transition: all 0.3s ease;
+}
+
+footer.footer form button:hover {
+  background-color: #f8c146;
+  color: #000;
+}
+
+footer.footer hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-color: #444;
+}
+
+footer.footer .text-center {
+  font-size: 14px;
+  color: #aaa;
+}

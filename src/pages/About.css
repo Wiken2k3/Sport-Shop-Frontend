@@ -1,0 +1,102 @@
+/* Container tổng */
+.about-section {
+  position: relative; /* quan trọng để ::before định vị */
+  min-height: 500px;
+  background: url('../assets/shoegame.png') no-repeat center center/cover;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  padding: 60px 0;
+  color: #f0f8ff;
+  overflow: hidden;
+}
+
+/* Tiêu đề */
+.about-title {
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  animation: fadeInDown 1s ease forwards;
+}
+/* Lớp đen mờ phủ lên background */
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-color: rgba(0, 0, 0, 0.5); /* màu đen mờ */
+  z-index: 0;
+}
+
+/* Nội dung trong about-section phải nằm trên lớp overlay */
+.about-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card */
+.about-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  color: #222;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  padding: 2rem 2.5rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Icon bên cạnh đoạn text */
+.about-icon {
+  color: #0099ff;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.about-icon:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Các đoạn text trong card */
+.about-card p {
+  margin-bottom: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-card {
+    font-size: 1rem;
+    padding: 1.5rem 1.8rem;
+  }
+}
