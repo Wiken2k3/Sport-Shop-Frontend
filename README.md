@@ -1,12 +1,41 @@
-# React + Vite
+# 🏀 Sport Shop - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Sport Shop** is a modern, fully responsive e-commerce web application designed for selling sports-related products. The frontend is built with modern tools and best practices to provide a seamless and interactive shopping experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛒 Product listing & filtering
+- 🧾 Add to cart and checkout flow
+- ❤️ Wishlist management
+- 📱 Fully responsive design
+- 🎨 Modern UI with Tailwind CSS
+- 🧠 State management with Zustand
+- 📦 Form validation using React Hook Form + Zod
+- ⚡ Smooth animations with Framer Motion
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- TypeScript
+- Next.js
+- Zustand
+- Tailwind CSS
+- React Hook Form
+- Zod
+- Framer Motion
+
+## 📸 Screenshots
+
+_Add screenshots here if available_
+
+## 🌐 Live Demo
+
+👉 [https://sport-shop.vercel.app](https://sport-shop.vercel.app) _(replace with actual link)_
+
+## 📁 Setup & Run Locally
+
+```bash
+git clone https://github.com/Wiken2k3/Sport-Shop-Frontend.git
+cd Sport-Shop-Frontend
+npm install
+npm run dev
